@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Pongal Wishes</title>
+
+		<!-- fonts -->
+		<link
+		href="https://fonts.googleapis.com/css2?family=Cinzel&family=Kavivanar&display=swap"
+		rel="stylesheet"
+		/>
+
+		<!-- stylesheet -->
+		<link rel="stylesheet" href="style.css" />
+
+	</head>
+	
+	<body>
+
+		<!--audio file-->
+		<audio id="sfx">
+			<source src="audios/audio1.mp3" type="audio/mp3">
+		</audio>
+
+		<!--header image-->
+		<img src=images/thoran.png width=100% height=170px>
+
+		<!--Creating a card-->
+		<div class="card">
+
+			<!--card image-->
+			<img src="images/img.png" />
+
+			<div class="text-container">
+				<h2>இனிய பொங்கல் நல்வாழ்த்துக்கள்</h2>
+				<p>
+				அன்பு பொங்க, ஆசைகள் பொங்க,<br> 
+				இன்பம் பொங்க, இனிமை பொங்க<br>
+				என்றும் உங்கள் வீட்டில் மகிழ்ச்சி பொங்க<br> 
+				பொங்கலோ பொங்கல் வாழ்த்துகள்!
+				</p>
+			</div>
+		</div>
+
+		<img src="images/sparkle.png" width=100% height=200vh/>
+
+		<!--audio toggle button-->
+		<div class="audio"/>
+			<p id="btn">[Click to Toggle Audio]</p>
+		</div>
+		
+		<!--js code for audio button-->
+		<script>
+			const sfx=document.getElementById("sfx");
+			var btn=document.getElementById("btn");
+			sfx.loop = true;
+			btn.onclick = function(){
+				if(sfx.paused) sfx.play();
+				else sfx.pause();
+			}
+		</script>
+		
+	</body>
+</html>
