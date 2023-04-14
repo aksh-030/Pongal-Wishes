@@ -13,3 +13,5 @@ This is a simple, responsive web page is a celebration of Pongal, a harvest fest
 ![Screenshot of initial page.](/view/ss1.png)
 
 ![Screenshot of page upon hover.](/view/ss2.png)
+
+**Note:** Please feel free to modify or update it as needed.
